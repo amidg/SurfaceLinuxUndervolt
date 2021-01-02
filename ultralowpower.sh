@@ -6,16 +6,17 @@
 sudo undervolt --core -130 --cache -130 --gpu -100 
 
 #set temperature limit, degrees C 
-sudo undervolt --temp-bat 55
+sudo undervolt --temp-bat 40
 
 #short power limit
-sudo undervolt -p2 25 1 
+sudo undervolt -p2 15 1 
 
 #long power limit
-sudo undervolt -p1 15 60
+sudo undervolt -p1 5 60
+sudo undervolt --lock-power-limit
 
 #==============================give notification========================
 echo "Battery-powered undervolting profile is applied"
 
 #kde users only:
-kdialog --title "Surface Undervolting" --passivepopup "Battery-powered profile is applied" 5
+kdialog --title "Surface Undervolting" --passivepopup "Ultra-Low Power mode" 5
