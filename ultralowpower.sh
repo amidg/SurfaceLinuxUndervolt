@@ -9,10 +9,10 @@ sudo undervolt --core -130 --cache -130 --gpu -100
 sudo undervolt --temp-bat 40
 
 #short power limit
-sudo undervolt -p2 15 1 
+sudo undervolt -p2 5 0.01 
 
 #long power limit
-sudo undervolt -p1 5 60
+sudo undervolt -p1 1 60
 sudo undervolt --lock-power-limit
 
 #==============================give notification========================
