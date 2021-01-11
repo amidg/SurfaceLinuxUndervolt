@@ -3,7 +3,7 @@
 #automated script to asjust undervoltage for the Microsoft Surface device
 #============= wall outlet  operation ==============
 #set undervoltage 100mV on CPU and 50mV on GPU
-sudo undervolt --core -130 --cache -100 --gpu -50 
+sudo undervolt --core 0 --cache 0 --gpu 0 
 
 #set temperature limit, degrees C 
 sudo undervolt --temp 70
