@@ -3,7 +3,7 @@
 #automated script to asjust undervoltage for the Microsoft Surface device
 #============= battery operation ==============
 #set undervoltage 130mV on CPU and 100mV on GPU
-sudo undervolt --core -130 --cache -130 --gpu -100 
+sudo undervolt --core -100 --cache -100 --gpu -50 
 
 #set temperature limit, degrees C 
 sudo undervolt --temp-bat 55
